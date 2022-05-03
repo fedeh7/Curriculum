@@ -1,0 +1,53 @@
+@import "./../../constants/mainStyles";
+
+.navbar-item {
+    border: 1px solid $main-blue-mountain-dark-blue;
+    border-radius: 0.5rem;
+
+    color: $main-blue-mountain-dark-blue;
+    text-decoration: none;
+    font-weight: bold;
+
+    border-color: $main-blue-mountain-sky-blue;
+    background-color: $main-blue-mountain-dark-blue;
+    color: $main-blue-mountain-white;
+
+    justify-content: center;
+
+    display: block;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+
+    @media (min-width: $main-mobile-breakpoint) {
+        display: inline-block;
+        padding: 1rem 2rem;
+        margin: 0;
+        margin-left: 2rem;
+
+        .navbar-desktop-menu {
+            display: block;
+        }
+    }
+
+    &:hover {
+        // border-color: $main-blue-mountain-sky-blue;
+        // background-color: $main-blue-mountain-dark-blue;
+        // color: $main-blue-mountain-white;
+
+        border-color: $main-blue-mountain-dark-blue;
+        background-color: $main-blue-mountain-white;
+        color: $main-blue-mountain-dark-blue;
+
+        transition: 0.3s;
+    }
+
+    &:active {
+        border-color: $main-blue-mountain-sky-blue;
+        background-color: $main-blue-mountain-white;
+        color: $main-blue-mountain-dark-blue;
+        transition: none;
+    }
+}
